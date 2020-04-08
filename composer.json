@@ -1,5 +1,9 @@
 {
     "name": "pkonfigurator/runner",
+    "description": "Pkonfigurator Zusatzpacket zum Versand der Emails",
+    "keywords": [],
+    "homepage": "http://alfenory.de",
+    "license": "MIT",
     "authors": [
         {
             "name": "Alexander Hoehling",
