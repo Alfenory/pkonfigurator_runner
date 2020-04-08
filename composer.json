@@ -1,0 +1,20 @@
+{
+    "name": "pkonfigurator/runner",
+    "authors": [
+        {
+            "name": "Alexander Hoehling",
+            "email": "alexander.hoehling@alfenory.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": { 
+            "PKonfigurator\\Runner\\": "src" 
+        }
+    },
+    "require-dev": {
+        "PKonfigurator/Runner": "@dev"
+    },
+    "require": {
+        "php": ">=5.5"
+    }
+}
