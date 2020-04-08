@@ -2,7 +2,7 @@
 
 namespace PKonfigurator\Runner;
 
-use PHPMailer\PHPMailer\PHPMailer;
+//use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
@@ -15,6 +15,13 @@ class MailController {
         $mail_cc,
         $subject, $text) {
         try {
+
+            //Achtung hier muss geklärt werden, dass eventuell auch eine Email versandt wird, wenn kein Passwort hinterlegt ist.
+
+            /*
+            $transport = (new Swift_SmtpTransport($mailconfig->host, 25))->setUsername($mailconfig->username)->setPassword($mailconfig->password);
+            
+
             $mail = new PHPMailer(true);
             $mail->SMTPDebug = 0;                                       //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
             $mail->isSMTP();                                            // Send using SMTP
@@ -77,6 +84,7 @@ class MailController {
             $mail->Body    = \utf8_decode($text);
 
             $mail->send();
+            */
             return true;
         } catch (\Exception $e) {
             echo("Message could not be sent. Mailer Error: {$mail->ErrorInfo}");

@@ -12,9 +12,10 @@
         }
     },
     "require-dev": {
-        "PKonfigurator/Runner": "@dev"
+        "pkonfigurator/runner": "@dev"
     },
     "require": {
-        "php": ">=5.5"
+        "php": ">=5.5",
+        "swiftmailer/swiftmailer:" : "6.0"
     }
 }
